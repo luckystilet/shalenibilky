@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.app-fade-enter-active, .app-fade-leave-active {
+  transition: all ease 0.4s;
+}
+.app-fade-enter, .app-fade-leave-to {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
