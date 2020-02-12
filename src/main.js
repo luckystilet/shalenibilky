@@ -2,6 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import wave from './directives/wave.directive'
+import msg from './utils/msg'
+import upper from './filters/apperCase'
+
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
@@ -13,6 +17,12 @@ import './css/style.css'
 
 Vue.config.productionTip = false
 Vue.use(VueAgile)
+
+
+Vue.directive('wave', wave)
+Vue.use(msg)
+Vue.filter('upper', upper)
+
 
 firebase.initializeApp({
   apiKey: "AIzaSyCnG_aV5ZP1yAjpW2Sb0oP5ixb89YkDawE",

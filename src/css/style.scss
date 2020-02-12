@@ -42,3 +42,17 @@
 }
 
 // Vue transition
+.custom-wave{
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: wave .6s linear;
+  opacity: .4;
+}
+
+@keyframes wave{
+  to{
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
