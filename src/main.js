@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import wave from './directives/wave.directive'
+import wave from './directives/wave'
 import msg from './utils/msg'
 import upper from './filters/apperCase'
 
